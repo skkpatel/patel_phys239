@@ -1,0 +1,96 @@
+\documentclass[10pt,letterpaper]{hmcpset}
+\usepackage[margin=.65in]{geometry}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{textcomp}
+
+\newcommand{\eps}{\ensuremath{\varepsilon}}
+
+\everymath{\displaystyle}
+
+\name{Sheena Patel}
+\class{Physics 239: Radiative Processes in Astrophysics}
+\assignment{Homework 4 Writeup}
+\duedate{December 2016}
+
+\begin{document}
+	
+	\begin{problem}[Problem 1]
+		
+		Import the M82 data from a file.
+		
+	\end{problem}
+
+	\begin{solution}
+		
+		The data for the galaxy M82, which is 3.6 Mpc away, is imported into Matlab in the structure 'm82struct' with the a data structure and a header structure. The data has been reassigned the name 'm82data' with first column wavelength with units {\textmu}m, second column monochromatic luminosity with units L$_\odot$/Hz and third column uncertainty of monochromatic luminosity with units L$_\odot$/Hz. This data is plotted in Figure 1.
+	
+	\end{solution}
+
+	\begin{problem}[Problem 2]
+		
+	There are four main processes that contribute to the spectral energy distribution for M82: starlight, dust emission, thermal free-free emission, and synchrotron radiation.
+
+	\end{problem}
+
+	
+	\begin{problem}[Problem 2a]
+	
+	\end{problem}
+
+	\begin{solution}
+		
+		I do not really know what this means, but in discussing with Logan Howe and using Wikipedia, I guess M82 would have a spectrum consistent with a single burst of star formation. Definitely do not know how to account for the effects of dust extinction. Also, I'm not totally sure where to find metallicity or IMF and quick Google searches did not help so much, so I'm choosing the instantaneous stellar emission with IMF 2.35, metallicity 0.004. According to Wikipedia, stars in M82's disk were formed about 500 million years ago, so I used that data in the spectrum. The spectrum is plotted in Figure 2. It would dominate over wavelengths of 1 to ~5 um.
+		
+	\end{solution}
+
+	\begin{problem}[Problem 2b]
+	
+	\end{problem}
+	
+	\begin{solution}
+		
+		I am going to take a random guess and say $T_{\text{dust}} \approx 50 \text{ K}$. The dust emission will be proportional to the blackbody spectrum $B_\nu$, so I have basically just taken luminosity to be a constant times $B_\nu$ in the appropriate range. I do not know how to make this into a spectrum for dust emission using temperature, mass, etc. Pretty sure the emission should not just be linear like my plot shows though.
+		
+	\end{solution}
+
+	\begin{problem}[Problem 2c]
+	
+	\end{problem}
+
+	\begin{solution}
+	
+		Using eq. 6.36 in the book, we can find the dependence on wavelength to find the synchrotron spectrum's wavelength dependence. $p$ should be between 2 and 3 I think, so I used 2.5. I did not write out the coefficients, just scaled so the synchrotron radiation dominates for wavelengths over 10 mm.
+	
+	\end{solution}
+
+	\begin{problem}[Problem 2d]
+	
+	\end{problem}
+	
+	\begin{solution}
+		
+		The free-free emission will scale with $e^{-h\nu/k_BT}$. My plots definitely do not have the correct coefficients, so no idea where anything dominates.
+		
+	\end{solution}
+
+	\begin{problem}[Problem 3]
+		
+	\end{problem}
+	
+	\begin{solution}
+		
+		Plots in figure 6.
+		
+	\end{solution}
+
+\end{document}
